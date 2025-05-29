@@ -1,6 +1,5 @@
 streamlit
 pandas
-pathlib
-plotly.express
+plotly
 pycountry
-annotated_text
+annotated-text
