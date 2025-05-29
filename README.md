@@ -1,10 +1,13 @@
 Global Billionaires 2023 Website
+
 Explore billionaire wealth around the world in 2023 through interactive Python-powered graphs. This website helps users understand global wealth distribution with clear visuals and accessible data insights.
 
 Project Purpose
+
 Gain a deeper understanding of the world’s billionaires by exploring trends in net worth, demographics, and geography. Our goal is to make complex data simple, engaging, and educational.
 
 Website Structure
+
 The website is organized into five main sections:
 1. Homepage
 - Introduction to our project
