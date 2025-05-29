@@ -1,0 +1,6 @@
+streamlit
+pandas
+pathlib
+plotly.express
+pycountry
+annotated_text
