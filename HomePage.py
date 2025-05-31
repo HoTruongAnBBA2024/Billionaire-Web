@@ -20,8 +20,10 @@ st.subheader("Business IT 2 — Python Project")
 
 # === Intro ===
 st.write("""
-Billionaires are more than just the wealthiest individuals on the planet – they are the architects of industries, the pioneers of innovation, and the powerhouses shaping the global economy. Their fortunes, businesses, and industries serve as a mirror reflecting economic trends, market dynamics, and the forces driving wealth creation.
- 
+We are a group of passionate business students analyzing billionaire data to explore wealth distribution and economic patterns globally.
+
+
+Our project uses **Python** to build interactive data visualizations that answer key questions about the ultra-rich and the industries powering their fortunes. 
 """)
 
 
