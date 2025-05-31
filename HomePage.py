@@ -44,12 +44,12 @@ members = [
 
 
 member_details = {
-    "106240001": {"quote": "🚀 Don’t wait for the perfect moment. Take the moment and make it perfect.", "bio": "💡 I don’t wait. I grind. Every second is a test—and I’m here to dominate, not negotiate. Stay hard."},
-    "106240444": {"quote": "📈 You can't reach your destination if you don't know where you want to go.", "bio": "🎮 Spontaneity is something you'll definitely see in me. Sometimes I'm the culprit, but in other situations, I'm a star."},
-    "106240421": {"quote": "🎨 I don’t wait for miracles – I become them", "bio": "🎤 Driven by belief, shaped by effort. I don’t wish for it – I work for it, every single day."},
-    "103240421": {"quote": "🔧 Driven by purpose, grounded by values, and always hungry for growth.", "bio": "🎸 A curious mind with a practical soul — passionate about auditing, languages, and levelling up every single day."},
-    "103240075": {"quote": "🧐 I chase ideas the way others chase sunsets — not to catch them, but to see where they take me.", "bio": "📚 Curious mind. Quiet rebel. I believe in building things that make people pause, think, or smile — whether it’s a project, a story, or a moment worth remembering. I’m not here to follow a path — I’m here to make one."},
-    "106240541": {"quote": "🤝 I don’t just glow up – I grow up", "bio": "✈️ The days when you love yourself will be the best days of your life."}
+    "106240001": {"intro": "🚀 Don’t wait for the perfect moment. Take the moment and make it perfect.", "fun_fact": "💡 I don’t wait. I grind. Every second is a test—and I’m here to dominate, not negotiate. Stay hard."},
+    "106240444": {"intro": "📈 You can't reach your destination if you don't know where you want to go.", "fun_fact": "🎮 Spontaneity is something you'll definitely see in me. Sometimes I'm the culprit, but in other situations, I'm a star."},
+    "106240421": {"intro": "🎨 I don’t wait for miracles – I become them", "fun_fact": "🎤 Driven by belief, shaped by effort. I don’t wish for it – I work for it, every single day."},
+    "103240421": {"intro": "🔧 Driven by purpose, grounded by values, and always hungry for growth.", "fun_fact": "🎸 A curious mind with a practical soul — passionate about auditing, languages, and levelling up every single day."},
+    "103240075": {"intro": "🧐 I chase ideas the way others chase sunsets — not to catch them, but to see where they take me.", "fun_fact": "📚 Curious mind. Quiet rebel. I believe in building things that make people pause, think, or smile — whether it’s a project, a story, or a moment worth remembering. I’m not here to follow a path — I’m here to make one."},
+    "106240541": {"intro": "🤝 I don’t just glow up – I grow up", "fun_fact": "✈️ The days when you love yourself will be the best days of your life."}
 }
 
 
@@ -81,7 +81,6 @@ for name, student_id, img_path in members:
         st.markdown(f"### {name}{' (Team Leader) 👑' if student_id == '106240001' else ''}")
         st.write(f"**Program:** {program}")
         st.write(f"**Email:** `{email}`")
-        st.write(details['intro'])
         st.caption(details['fun_fact'])
     st.markdown("<br>", unsafe_allow_html=True)
 
