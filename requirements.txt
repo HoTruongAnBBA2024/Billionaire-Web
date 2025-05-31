@@ -1,5 +1,7 @@
 streamlit
 pandas
-plotly
-pycountry
+numpy
 streamlit-extras
+streamlit-lottie
+requests
+Pillow
