@@ -20,10 +20,8 @@ st.subheader("Business IT 2 — Python Project")
 
 # === Intro ===
 st.write("""
-We are a group of passionate business students analyzing billionaire data to explore wealth distribution and economic patterns globally.
-
-
-Our project uses **Python** to build interactive data visualizations that answer key questions about the ultra-rich and the industries powering their fortunes.
+Billionaires are more than just the wealthiest individuals on the planet – they are the architects of industries, the pioneers of innovation, and the powerhouses shaping the global economy. Their fortunes, businesses, and industries serve as a mirror reflecting economic trends, market dynamics, and the forces driving wealth creation.
+ 
 """)
 
 
@@ -46,12 +44,12 @@ members = [
 
 
 member_details = {
-    "106240001": {"intro": "🚀 Leading the charge with a vision for success!", "fun_fact": "💡 Believes coffee is the ultimate compiler for great ideas."},
-    "106240444": {"intro": "📈 The analytical mind always crunching numbers and finding patterns.", "fun_fact": "🎮 Once tried to automate his gaming with Python scripts."},
-    "106240421": {"intro": "🎨 Bringing data to life with stunning visuals and clear storytelling.", "fun_fact": "🎤 Secretly a karaoke star after project deadlines."},
-    "103240421": {"intro": "🔧 The problem-solver who can fix anything from code to a wobbly table.", "fun_fact": "🎸 Can play the theme song of any popular tech startup on the guitar."},
-    "103240075": {"intro": "🧐 Detail-oriented and always ensuring everything is pixel-perfect.", "fun_fact": "📚 Reads documentation for fun... seriously!"},
-    "106240541": {"intro": "🤝 The communicator, making sure everyone is on the same page and motivated.", "fun_fact": "✈️ Dreams of coding from a different country each month."}
+    "106240001": {"quote": "🚀 Don’t wait for the perfect moment. Take the moment and make it perfect.", "bio": "💡 I don’t wait. I grind. Every second is a test—and I’m here to dominate, not negotiate. Stay hard."},
+    "106240444": {"quote": "📈 You can't reach your destination if you don't know where you want to go.", "bio": "🎮 Spontaneity is something you'll definitely see in me. Sometimes I'm the culprit, but in other situations, I'm a star."},
+    "106240421": {"quote": "🎨 I don’t wait for miracles – I become them", "bio": "🎤 Driven by belief, shaped by effort. I don’t wish for it – I work for it, every single day."},
+    "103240421": {"quote": "🔧 Driven by purpose, grounded by values, and always hungry for growth.", "bio": "🎸 A curious mind with a practical soul — passionate about auditing, languages, and levelling up every single day."},
+    "103240075": {"quote": "🧐 I chase ideas the way others chase sunsets — not to catch them, but to see where they take me.", "bio": "📚 Curious mind. Quiet rebel. I believe in building things that make people pause, think, or smile — whether it’s a project, a story, or a moment worth remembering. I’m not here to follow a path — I’m here to make one."},
+    "106240541": {"quote": "🤝 I don’t just glow up – I grow up", "bio": "✈️ The days when you love yourself will be the best days of your life."}
 }
 
 
