@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+streamlit_lottie
+requests
+streamlit-extras
+streamlit-annotated-text
+Pillow
+matplotlib
+plotly
