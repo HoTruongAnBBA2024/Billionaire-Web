@@ -76,24 +76,20 @@ st.markdown("## Dataset Author")
 with st.container():
     col1, col2 = st.columns([1, 3])
     with col1:
-        st.image("image/nidula_profile.jpg", caption="Nidula Elgiriyewithana", width=220)
+        st.image("image/nidula_profile.jpg", caption="Nidula Elgiriyewithana", width=100)
     with col2:
         st.markdown("""
 **Nidula Elgiriyewithana** is a passionate and results-driven Data Scientist  
 with a strong foundation in Artificial Intelligence and Data Science. Currently pursuing a BSc (Hons) in AI & Data Science,  
-he is deeply fascinated by the potential of data to transform industries and drive innovation.
-His academic journey and hands-on experience have shaped a solid understanding of:
-- Machine Learning & Deep Learning  
-- Natural Language Processing (NLP)  
-- Cloud Computing  
-- Applied Data Science Techniques
 > He created the Billionaires Statistics Dataset (2023) for academic and analytical exploration.
-        """)
+ """)
 
 
 # === Load Dataset ===
 df = pd.read_csv("Billionaires_Statistics_Dataset.csv")
 df = df.dropna(subset=['personName', 'finalWorth', 'country', 'industries'])
+
+
 
 
 # === Full Dataset Table with Filters ===
@@ -122,9 +118,11 @@ selected_worth = col3.slider(
 
 # Handle "All" selection for countries and industries
 if "All" in selected_countries:
-    filter_countries = countries 
+    filter_countries = countries
 else:
     filter_countries = selected_countries
+
+
 
 
 if "All" in selected_industries:
@@ -133,7 +131,7 @@ else:
     filter_industries = selected_industries
 
 
-if filter_countries and filter_industries: 
+if filter_countries and filter_industries:
     filtered_df = df[
         (df['country'].isin(filter_countries)) &
         (df['industries'].isin(filter_industries)) &
