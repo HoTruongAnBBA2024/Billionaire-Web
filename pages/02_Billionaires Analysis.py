@@ -232,7 +232,7 @@ if billionaire_summary_data.empty:
 
 
 # --- Main Title ---
-st.title("🌍 Global Billionaires Visualization")
+st.subheader("🌍 Global Billionaires Visualization")
 st.markdown("Understanding the Global Billionaire Landscape")
 
 
