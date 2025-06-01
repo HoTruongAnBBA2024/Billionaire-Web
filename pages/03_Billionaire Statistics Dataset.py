@@ -66,6 +66,7 @@ The dataset provides:
 - Personal and financial details (e.g. name, age, net worth)
 - Industry and business category
 - Country-level economic metrics (GDP, education, life expectancy)
+
 **Source:**  
 [🔗 Billionaires Statistics Dataset (Google Sheets)](https://docs.google.com/spreadsheets/d/1wfNX83N5dYLWrt4RJNjDZ76V3Cs3BDW7/edit?usp=drive_link&ouid=106114923307893494411&rtpof=true&sd=true)
 """)
