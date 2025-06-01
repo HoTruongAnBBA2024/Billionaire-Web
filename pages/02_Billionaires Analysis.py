@@ -237,7 +237,6 @@ st.markdown("Understanding the Global Billionaire Landscape")
 
 
 # --- Worldmap Section ---
-st.markdown("### Global Distribution of Billionaires")
 text_part1 = "This world map reveals more than just where billionaires live — it maps the invisible lines of global ambition and inequality. "
 highlight1_text = "Billionaires are concentrated in developed nations with strong financial systems; while weaker economies host significantly fewer ultra-wealthy individuals."
 highlight1_label = None
