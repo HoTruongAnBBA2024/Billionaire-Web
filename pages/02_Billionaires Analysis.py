@@ -760,7 +760,7 @@ st.markdown("""
 <div style='text-align: center;'>
    <h4>Explore the Full Projects</h4>
    <p>
-       <a href='https://r-project-link' target='_blank' style='text-decoration: none; color: #1F78B4; font-weight: bold; margin-right: 20px;'>
+       <a href='https://raw.githubusercontent.com/HoTruongAnBBA2024/Billionaire-Web/main/pages/PYTHON%201%20PROJECT.pdf' target='_blank' style='text-decoration: none; color: #1F78B4; font-weight: bold; margin-right: 20px;'>
            📊 R Programming Project
        </a>
        <a href='https://python-project-link' target='_blank' style='text-decoration: none; color: #1F78B4; font-weight: bold;'>
