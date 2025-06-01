@@ -13,7 +13,7 @@ import os
 # ==== Setup ====
 st.set_page_config(page_title="Billionaires - What you should know", page_icon="💰", layout="wide")
 st.subheader("Business IT 2 | Python 2")
-st.title(':blue[Billionaire - what you should know]')
+st.title(':blue[Billionaires - What you should know]')
 
 
 st.markdown("---")
