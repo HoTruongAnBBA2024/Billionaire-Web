@@ -11,7 +11,7 @@ import os
 
 
 # ==== Setup ====
-st.set_page_config(page_title="Billionaire - what you should know", page_icon="💰", layout="wide")
+st.set_page_config(page_title="Billionaires - What you should know", page_icon="💰", layout="wide")
 st.subheader("Business IT 2 | Python 2")
 st.title(':blue[Billionaire - what you should know]')
 
@@ -69,7 +69,7 @@ st.markdown("---")
 
 # Top 10 Billionaires
 colored_header(
-    label="Top 10 Billionaires",
+    label="Top 10 Billionaires (2023)",
     description="Let's take a look at the billionaires!",
     color_name="light-blue-70",
 )
