@@ -591,7 +591,7 @@ with right:
        direction='clockwise',
        rotation=0,
        marker=dict(colors=inner_colors, line=dict(color='black', width=1)),
-       texttemplate="<b>%{label}</b><br>%{percent}%",
+       texttemplate="<b>%{label}</b><br>%{percent}",
        textposition='inside',
        insidetextorientation='horizontal',
        textfont=dict(size=12),
