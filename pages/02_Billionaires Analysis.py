@@ -268,7 +268,7 @@ globe_segment_order_with_others = base_segment_order + ["Other Countries"]
 
 # Analysis texts
 ANALYSIS_TEXTS = {
-   "Global View": "As of 2023, the world hosts over 2,600 billionaires across more than 75 countries, yet nearly 60% are concentrated in just five nations. The top three alone — the U.S., China, and India — account for over half of the global total. This extreme concentration underscores a deeper truth: billionaire creation isn't random, but driven by policy, capital flow, innovation ecosystems, and access to global markets.",
+   "All Countries": "As of 2023, the world hosts over 2,600 billionaires across more than 75 countries, yet nearly 60% are concentrated in just five nations. The top three alone — the U.S., China, and India — account for over half of the global total. This extreme concentration underscores a deeper truth: billionaire creation isn't random, but driven by policy, capital flow, innovation ecosystems, and access to global markets.",
    "United States of America": "In the U.S., the path to billionaire status often begins with disruption. Whether it’s Wall Street, Silicon Valley, or a global fashion empire, American billionaires capitalize on bold ideas, big risks, and a culture that rewards ambition with opportunity on a global stage.",
    "China": "In China, billionaire success stories are born out of massive scale and strategic ambition. As manufacturing zones evolved into global innovation hubs, fortunes grew rapidly — with many billionaires emerging from state-supported growth, tech unicorns, and expansive industrial ecosystems.",
    "India": "India’s billionaire rise is closely tied to a fast-expanding middle class, a booming digital sector, and a young entrepreneurial generation. Wealth in India today often straddles old industrial dynasties and bold new ventures — painting a vibrant picture of a nation in economic transformation.",
@@ -347,14 +347,14 @@ with col_globe:
 with col_filter_info:
    st.subheader("Global View & 3 Leading Nations")
    fixed_country_options_display = ["United States of America", "China", "India"]
-   country_options_for_select = ["Global View"] + fixed_country_options_display
+   country_options_for_select = ["All Countries"] + fixed_country_options_display
    default_selectbox_index = 0
    current_selection_in_state = st.session_state.get('selected_country_for_info')
    if current_selection_in_state and current_selection_in_state in country_options_for_select:
        default_selectbox_index = country_options_for_select.index(current_selection_in_state)
    elif not current_selection_in_state:
-       st.session_state.selected_country_for_info = "Global View"
-       default_selectbox_index = country_options_for_select.index("Global View")
+       st.session_state.selected_country_for_info = "All Countries"
+       default_selectbox_index = country_options_for_select.index("All Countries")
 
 
    selected_country_name_from_box = st.selectbox(
@@ -367,7 +367,7 @@ with col_filter_info:
 
    if selected_country_name_from_box != st.session_state.get('selected_country_for_info'):
        st.session_state.selected_country_for_info = selected_country_name_from_box
-       if selected_country_name_from_box == "Global View":
+       if selected_country_name_from_box == "All Countries":
            st.session_state.selected_country_iso_for_globe_highlight = None
            st.session_state.target_lon = 0
            st.session_state.target_lat = 20
@@ -385,7 +385,7 @@ with col_filter_info:
 
    current_display_country = st.session_state.get('selected_country_for_info')
    if current_display_country == "All Countries":
-       st.markdown("#### Global View")
+       st.markdown("#### Global Overview")
        total_global_billionaires = billionaire_summary_data['billionaire_count'].sum()
        st.metric(label="Total Global Billionaires (in dataset)", value=f"{total_global_billionaires:,}")
        industry_col_name = 'category'
