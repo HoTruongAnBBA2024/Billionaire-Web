@@ -1,17 +1,24 @@
 import streamlit as st
 import pandas as pd
+import base64
+
+
 
 
 # === Page Configuration ===
 st.set_page_config(page_title="Billionaire Wealth Dashboard", layout="wide")
 
 
+
+
 # === Main Title ===
 st.markdown("# Billionaire Wealth Analysis Dashboard")
 st.markdown("#### Understanding the Ultra-Rich: Who They Are, Where They Live, and How They Built Their Fortunes")
-st.markdown("""See where the world’s richest people live, how they made their money, and what jobs helped them get rich. Whether you’re just curious or studying, this tool makes it simple to explore the world of billionaires.""")
+st.markdown("""See where the world's richest people live, how they made their money, and what jobs helped them get rich. Whether you're just curious or studying, this tool makes it simple to explore the world of billionaires.""")
 st.markdown("---")
 st.markdown("## Introduction & Research Goals")
+
+
 
 
 # Inject CSS for both theme-responsive box AND the highlight block
@@ -31,8 +38,21 @@ st.markdown("""
     padding: 12px;
     border-radius: 8px;
 }
+.member-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.circle-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #CEAB93;
+}
 </style>
 """, unsafe_allow_html=True)
+
+
 
 
 # Full paragraph with formatting and highlight
@@ -57,6 +77,8 @@ st.markdown(highlighted_html, unsafe_allow_html=True)
 st.markdown("---")
 
 
+
+
 # === About the Dataset ===
 st.markdown("## About the Dataset")
 st.markdown("""
@@ -67,34 +89,57 @@ The dataset provides:
 - Industry and business category
 - Country-level economic metrics (GDP, education, life expectancy)
 
-**Source:**  
-[🔗 Billionaires Statistics Dataset (Google Sheets)](https://docs.google.com/spreadsheets/d/1wfNX83N5dYLWrt4RJNjDZ76V3Cs3BDW7/edit?usp=drive_link&ouid=106114923307893494411&rtpof=true&sd=true)
+
+
+
+**Source:**  [🔗 Billionaires Statistics Dataset (Google Sheets)](https://docs.google.com/spreadsheets/d/1wfNX83N5dYLWrt4RJNjDZ76V3Cs3BDW7/edit?usp=drive_link&ouid=106114923307893494411&rtpof=true&sd=true)
 """)
+
+
 
 
 # === Dataset Author ===
 st.markdown("## Dataset Author")
 with st.container():
-    col1, col2 = st.columns([1, 3])
+    col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("image/nidula_profile.jpg", caption="Nidula Elgiriyewithana", width=220)
+        # Load and encode image
+        try:
+            with open("image/nidula_profile.jpg", "rb") as img_file:
+                b64 = base64.b64encode(img_file.read()).decode()
+            st.markdown(f"""
+                <div class="member-card">
+                    <img src="data:image/jpeg;base64,{b64}" class="circle-img"/>
+                    <p><strong>Nidula Elgiriyewithana</strong></p>
+                </div>
+            """, unsafe_allow_html=True)
+        except Exception as e:
+            st.error(f"Error loading image: {e}")
     with col2:
         st.markdown("""
-**Nidula Elgiriyewithana** is a passionate and results-driven Data Scientist  
-with a strong foundation in Artificial Intelligence and Data Science. Currently pursuing a BSc (Hons) in AI & Data Science,  
-he is deeply fascinated by the potential of data to transform industries and drive innovation.
-His academic journey and hands-on experience have shaped a solid understanding of:
+**Data Scientist** specializing in AI & Data Science  
+Currently pursuing a BSc (Hons) in AI & Data Science, focusing on:
 - Machine Learning & Deep Learning  
-- Natural Language Processing (NLP)  
+- Natural Language Processing  
 - Cloud Computing  
-- Applied Data Science Techniques
-> He created the Billionaires Statistics Dataset (2023) for academic and analytical exploration.
+- Applied Data Science
+
+
+> Creator of the Billionaires Statistics Dataset (2023)
         """)
+
+
 
 
 # === Load Dataset ===
 df = pd.read_csv("Billionaires_Statistics_Dataset.csv")
 df = df.dropna(subset=['personName', 'finalWorth', 'country', 'industries'])
+
+
+
+
+
+
 
 
 # === Full Dataset Table with Filters ===
@@ -105,6 +150,8 @@ countries = sorted(df['country'].unique())
 industries = sorted(df['industries'].unique())
 min_worth = float(df['finalWorth'].min())
 max_worth = float(df['finalWorth'].max())
+
+
 
 
 # Add "All" option
@@ -121,11 +168,19 @@ selected_worth = col3.slider(
 )
 
 
+
+
 # Handle "All" selection for countries and industries
 if "All" in selected_countries:
-    filter_countries = countries 
+    filter_countries = countries
 else:
     filter_countries = selected_countries
+
+
+
+
+
+
 
 
 if "All" in selected_industries:
@@ -134,7 +189,9 @@ else:
     filter_industries = selected_industries
 
 
-if filter_countries and filter_industries: 
+
+
+if filter_countries and filter_industries:
     filtered_df = df[
         (df['country'].isin(filter_countries)) &
         (df['industries'].isin(filter_industries)) &
@@ -145,6 +202,8 @@ if filter_countries and filter_industries:
     st.dataframe(filtered_df)
 else:
     st.warning("Please select at least one country and one industry to view filtered data.")
+
+
 
 
 # === Dataset Variable Dictionary ===
@@ -188,13 +247,19 @@ variables = {
 }
 
 
+
+
 # Use session_state for toggling
 if 'show_all_vars' not in st.session_state:
     st.session_state['show_all_vars'] = False
 
 
+
+
 def toggle_vars():
     st.session_state['show_all_vars'] = not st.session_state['show_all_vars']
+
+
 
 
 # Start the styled box
@@ -202,6 +267,8 @@ st.markdown("Key variables at a glance:")
 for i, (key, desc) in enumerate(variables.items()):
     if i < 5:
         st.markdown(f"- **{key}** — {desc}")
+
+
 
 
 if not st.session_state['show_all_vars']:
@@ -212,3 +279,4 @@ else:
             st.markdown(f"- **{key}** — {desc}")
     st.button("Show Less", key="show_less_btn", on_click=toggle_vars, args=(), kwargs={}, type="primary")
 st.markdown('</div>', unsafe_allow_html=True)
+
