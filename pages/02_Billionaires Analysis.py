@@ -238,11 +238,11 @@ st.markdown("Understanding the Global Billionaire Landscape")
 
 # --- Worldmap Section ---
 text_part1 = "This world map reveals more than just where billionaires live — it maps the invisible lines of global ambition and inequality."
-highlight1_text = "Billionaires are concentrated in developed nations with strong financial systems; while weaker economies host significantly fewer ultra-wealthy individuals."
+highlight1_text = "Billionaires are primarily concentrated in developed nations with strong financial systems; while weaker economies still host significantly fewer ultra-wealthy individuals."
 highlight1_label = None
 highlight_color = "#CEAB93"
 highlight1_text_color = "black"
-text_part2 = "      Behind every color lies a deeper story of access, aspiration, and advantage — a silent narrative written in policy, possibility, and the power to build. In some countries, the billionaire remains a rare phenomenon, a symbol of exception. In others, they are the architects of empires, the drivers of innovation, and the names behind global brands. From the quiet, steady rise of emerging markets to the roaring, relentless engines of economic giants, the global spread of ultra-wealth tells us one enduring truth: wealth doesn’t just appear — it follows where opportunity is planted, nurtured, and allowed to thrive."
+text_part2 = "Behind every color lies a deeper story of access, aspiration, and advantage — a silent narrative written in policy, possibility, and the power to build. In some countries, the billionaire remains a rare phenomenon, a symbol of exception. In others, they are the architects of empires, the drivers of innovation, and the names behind global brands. From the quiet, steady rise of emerging markets to the roaring, relentless engines of economic giants, the global spread of ultra-wealth tells us one enduring truth: wealth doesn’t just appear — it follows where opportunity is planted, nurtured, and allowed to thrive."
 highlight2_text = "This isn’t just about wealth — it’s about systems that empower, environments that inspire, and policies that unlock potential. The billionaire map doesn’t just reflect where wealth resides — it reflects where the future is being built."
 highlight2_label = None
 highlight2_text_color = "black"
