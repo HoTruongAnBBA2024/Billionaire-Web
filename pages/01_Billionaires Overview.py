@@ -84,7 +84,6 @@ st.markdown("""
 <div style="text-align: justify;">
     While they make up less than 0.0001% of the population, they control over 13% of the world’s wealth. Their decisions ripple through markets, influence industries, and drive innovation. From reshaping technology to dominating retail and energy, these individuals represent more than just wealth—they embody economic influence and transformation.  
     Here are the top 10 billionaires whose fortunes not only reflect success but also steer the direction of the modern economy.<br><br>
-    (Click on their names to explore further)
 </div>
 """, unsafe_allow_html=True)
 
