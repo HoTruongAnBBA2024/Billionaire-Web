@@ -232,7 +232,7 @@ if billionaire_summary_data.empty:
 
 
 # --- Main Title ---
-st.subheader("🌍 Global Billionaires Visualization")
+st.subheader("Global Billionaires Visualization")
 st.markdown("Understanding the Global Billionaire Landscape")
 
 
@@ -345,7 +345,7 @@ with col_globe:
 
 
 with col_filter_info:
-   st.subheader("Global View & 3 Leading Nations")
+   st.subheader("Global View & Top 3 Leading Nations")
    fixed_country_options_display = ["United States of America", "China", "India"]
    country_options_for_select = ["Global Overview"] + fixed_country_options_display
    default_selectbox_index = 0
