@@ -570,7 +570,7 @@ with right:
        sort=False,
        direction='clockwise',
        rotation=0,
-       marker=dict(colors=outer_colors, line=dict(color='black', width=1)),
+       marker=dict(colors=outer_colors, line=dict(color='white', width=1)),
        texttemplate="%{label}",
        textposition='outside',
        textfont=dict(size=14),
@@ -589,7 +589,7 @@ with right:
        sort=False,
        direction='clockwise',
        rotation=0,
-       marker=dict(colors=inner_colors, line=dict(color='black', width=1)),
+       marker=dict(colors=inner_colors, line=dict(color='white', width=1)),
        texttemplate="<b>%{label}</b><br>%{percent}",
        textposition='inside',
        insidetextorientation='horizontal',
@@ -609,7 +609,6 @@ with right:
    )
  
    st.plotly_chart(fig, use_container_width=True)
-
 
 # --- Bar and Radar Chart Section ---
 st.markdown("---")
