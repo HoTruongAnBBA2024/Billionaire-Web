@@ -347,14 +347,14 @@ with col_globe:
 with col_filter_info:
    st.subheader("Global View & 3 Leading Nations")
    fixed_country_options_display = ["United States of America", "China", "India"]
-   country_options_for_select = ["All Countries"] + fixed_country_options_display
+   country_options_for_select = ["Global Overview"] + fixed_country_options_display
    default_selectbox_index = 0
    current_selection_in_state = st.session_state.get('selected_country_for_info')
    if current_selection_in_state and current_selection_in_state in country_options_for_select:
        default_selectbox_index = country_options_for_select.index(current_selection_in_state)
    elif not current_selection_in_state:
        st.session_state.selected_country_for_info = "All Countries"
-       default_selectbox_index = country_options_for_select.index("All Countries")
+       default_selectbox_index = country_options_for_select.index("Global Overview")
 
 
    selected_country_name_from_box = st.selectbox(
@@ -367,7 +367,7 @@ with col_filter_info:
 
    if selected_country_name_from_box != st.session_state.get('selected_country_for_info'):
        st.session_state.selected_country_for_info = selected_country_name_from_box
-       if selected_country_name_from_box == "All Countries":
+       if selected_country_name_from_box == "Global Overview":
            st.session_state.selected_country_iso_for_globe_highlight = None
            st.session_state.target_lon = 0
            st.session_state.target_lat = 20
@@ -384,7 +384,7 @@ with col_filter_info:
 
 
    current_display_country = st.session_state.get('selected_country_for_info')
-   if current_display_country == "All Countries":
+   if current_display_country == "Global Overview":
        st.markdown("#### Global Overview")
        total_global_billionaires = billionaire_summary_data['billionaire_count'].sum()
        st.metric(label="Total Global Billionaires (in dataset)", value=f"{total_global_billionaires:,}")
