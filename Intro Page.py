@@ -3,19 +3,8 @@ import os
 import base64
 
 # === Cấu hình trang chính ===
-st.set_page_config(page_title="💰 Intro Video Only", layout="wide")
+st.set_page_config(page_title="Intro Page", layout="wide", initial_sidebar_state="collapsed")
 
-# === Ẩn sidebar hoàn toàn ===
-st.markdown("""
-    <style>
-        [data-testid="stSidebar"] {
-            display: none;
-        }
-        [data-testid="collapsedControl"] {
-            display: none;
-        }
-    </style>
-""", unsafe_allow_html=True)
 
 # === Đường dẫn video local ===
 video_local_path = os.path.join("image", "intro_video.mp4")
@@ -79,4 +68,4 @@ st.markdown("""
 
 # === Nút chuyển hướng đến tab chính (HomePage) ===
 if st.button("🚀 Explore Now"):
-    st.switch_page("pages/01_Home Page.py") 
+    st.switch_page("pages/Home Page.py") 
