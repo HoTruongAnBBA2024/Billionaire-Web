@@ -6,7 +6,7 @@ import base64
 
 
 # === Page Configuration ===
-st.set_page_config(page_title="Billionaire Wealth Dashboard", layout="wide")
+st.set_page_config(page_title="Billionaire Wealth Dashboard", layout="wide", initial_sidebar_state="collapsed")
 
 
 
