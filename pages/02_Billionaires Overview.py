@@ -211,7 +211,7 @@ with nav_col2:
 # Image path and info display
 billionaire = billionaires_info[st.session_state.page]
 script_dir = os.path.dirname(os.path.abspath(__file__))
-img_path_relative = f"image/billionaire-{st.session_state.page + 1}.png"
+img_path_relative = f"../image/billionaire-{st.session_state.page + 1}.png"
 img_path_absolute = os.path.join(script_dir, img_path_relative)
 
 
