@@ -79,4 +79,4 @@ st.markdown("""
 
 # === Nút chuyển hướng đến tab chính (HomePage) ===
 if st.button("🚀 Explore Now"):
-    st.switch_page("Business IT 2 — Python Project")
+    st.switch_page("01_Home Page")
