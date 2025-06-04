@@ -4,7 +4,7 @@ import pandas as pd
 from streamlit_extras.stoggle import stoggle
 
 
-st.set_page_config(page_title="Explore our code 😉",page_icon="😉",layout="wide")
+st.set_page_config(page_title="Explore our code 😉",page_icon="😉",layout="wide", initial_sidebar_state="collapsed")
 st.subheader("Business IT 2 | Python 2")
 st.title(':blue[Explore our code 😉]')
 st.write("*Are you interested in how we brought this application to life? Let's take a look at our code right down there!*")
