@@ -236,7 +236,7 @@ with st.container():
                 b64 = base64.b64encode(img_file.read()).decode()
             st.markdown(f"""
                 <div class="member-card">
-                    <img src="data:image/jpeg;base64,{b64}" class="billionaire-img"/>
+                    <img src="data:image/png;base64,{b64}" class="billionaire-img"/>
                 </div>
             """, unsafe_allow_html=True)
         except Exception as e:
