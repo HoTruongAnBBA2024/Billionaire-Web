@@ -68,7 +68,7 @@ cinematic_intro = """
 }
 .intro-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 30px;
