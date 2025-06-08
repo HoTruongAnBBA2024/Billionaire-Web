@@ -20,12 +20,6 @@ bg_base64 = get_base64_of_bin_file(bg_image_path)
 if bg_base64:
     bg_overlay = f"""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
-
-    html, body, [class*="st-"] {{
-        font-family: 'Space Grotesk', sans-serif;
-    }}
-
     .stApp {{
         background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
                     url("data:image/jpg;base64,{bg_base64}");
@@ -47,10 +41,9 @@ if bg_base64:
     }}
 
     .fade-in {{
-        opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1.5s;
+    opacity: 0;
+    animation: fadeIn ease-in-out 2.5s;
+    animation-fill-mode: forwards;
     }}
 
     @keyframes fadeIn {{
