@@ -31,7 +31,7 @@ st.markdown("---")
 colored_header(label="Team Leader & Members", description="Our visuals, powered by passion", color_name="light-blue-70")
 
 
-st.markdown("###Meet the Team")
+st.markdown("### Meet the Team")
 members = [
    ("Hồ Trường An", "106240001", "image/4.png"),
    ("Đỗ Lê Thái Khang", "106240444", "image/1.png"),
