@@ -28,7 +28,7 @@ st.markdown("---")
 
 
 # === Team Section ===
-colored_header(label="🧑‍💼 Team Leader & Members", description="Our visuals, powered by passion", color_name="light-blue-70")
+colored_header(label="Team Leader & Members", description="Our visuals, powered by passion", color_name="light-blue-70")
 
 
 st.markdown("### 💼 Meet the Team")
