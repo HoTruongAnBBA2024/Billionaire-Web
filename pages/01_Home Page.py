@@ -14,7 +14,7 @@ rain(emoji="💵", font_size=48, falling_speed=8, animation_length=5)
 
 
 # === Page Header ===
-st.title("💼 Billionaire Wealth Analysis Dashboard")
+st.title("Billionaire Wealth Analysis Dashboard")
 st.subheader("Business IT 2 — Python Project")
 
 
