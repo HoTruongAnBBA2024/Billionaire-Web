@@ -20,7 +20,7 @@ st.subheader("Business IT 2 — Python Project")
 
 # === Intro ===
 st.write("""
-Billionaires are more than just the wealthiest individuals on the planet – they are the architects of industries, the pioneers of innovation, and the powerhouses shaping the global economy. Their fortunes, businesses, and industries serve as a mirror reflecting economic trends, market dynamics, and the forces driving wealth creation.
+We are a group of business students passionate about wealth distribution and global economic dynamics. In order to better understand the trends in global wealth accumulation, we decided to analyze the billionaire statistics from the year 2023. Our visualization shows the insights into the billionaire distribution, which industries dominate and the figure for billionaires from many regions providing others with a clearer perspective of the scale and structure of wealth in today’s economy.
 """)
 
 
