@@ -6,7 +6,7 @@ from streamlit_extras.let_it_rain import rain
 
 
 # === Page settings ===
-st.set_page_config(page_title="Home Page", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Home Page", layout="wide")
 
 
 # === Rain animation ===
